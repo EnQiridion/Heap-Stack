@@ -1,0 +1,6 @@
+[package]
+name = "heapstack_feedback"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
