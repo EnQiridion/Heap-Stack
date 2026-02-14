@@ -4,6 +4,11 @@ man kan tilgengæld peek for at se hvad data der ligger i midten.
 &self i en metode kan kun læse (immutable)
 hvorimod &mut self må ændre i data da det bliver mutable.
 
+Selve Vec bliver gemt på stack, hvor at indholdet vec har bliver gemt på heapen, da det er en ukendt størrelse.
+
+len er længden af vec altså hvor mange elementer der er i, hvis vec har 10 tal så er len 10
+capacity starter på 4 og hvis len bliver 4 eller mere så bliver capacity fordoblet indtil len bliver det samme eller over capacity så fordobler det igen.
+
 
 Vec kan vokse jo flere elementer der kommer i 'boxen', men vec har en størrelse på heapen,
 som bliver fyldt på et tidspunkt, her er vec nødt til at finde et større sted den kan være
